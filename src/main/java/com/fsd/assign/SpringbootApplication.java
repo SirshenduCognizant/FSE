@@ -13,9 +13,5 @@ public class SpringbootApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = SpringApplication.run(SpringbootApplication.class, args);
-		
-		for (String name: applicationContext.getBeanDefinitionNames()) {
-            System.out.println("name : " +name);
-        }
 	}
 }
