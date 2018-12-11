@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 9090
 #contextPath: /SpringBootCRUDApp
 ---
 spring:
@@ -8,7 +8,7 @@ datasource:
   sampleapp:
     url: jdbc:mysql://localhost:3306/ftjb014
     username: root
-    password: root
+    password: pass@word1
     driverClassName: com.mysql.jdbc.Driver
     defaultSchema:
     maxPoolSize: 20
