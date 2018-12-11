@@ -1,0 +1,21 @@
+server:
+  port: 8080
+#contextPath: /SpringBootCRUDApp
+---
+spring:
+  profiles: local,default
+datasource:
+  sampleapp:
+    url: jdbc:mysql://localhost:3306/ftjb014
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      order_updates: true
+      order_inserts: true
